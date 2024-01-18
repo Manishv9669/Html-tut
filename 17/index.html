@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        div{
+            background-color: rgb(225, 241, 104);
+        }
+
+        .brown{
+            background-color:brown;
+        }
+
+        #green{
+            background-color: green;
+        }
+
+        div > p{
+            color: aqua;
+            background-color: blue;
+        }
+
+        div article{
+            color: chartreuse;
+            background-color: blueviolet;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a:visited{
+            color: purple;
+        }
+
+        a:hover{
+            background-color: chartreuse;
+        }
+
+        p:first-child{
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div>Normal div selector
+        <p>I am a para inside div using child selector</p>
+    </div>
+    
+    <div class="brown">class selector
+        <article>I am an article inside div using descendent selector</article>
+    </div>
+
+    <div id="green">Id selector</div>
+    <a href="https://www.google.com">Go to Google</a>
+
+    <main>
+        <p>I am first child</p>
+        <p>And I am second</p>
+    </main>
+
+</body>
+</html>
