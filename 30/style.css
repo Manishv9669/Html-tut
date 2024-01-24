@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-:root {                                /*global variable */
+:root {                                /*Global variable */
     --color: rgb(191, 52, 98);      
     --seccolor: rgb(191, 141, 149);
     
@@ -28,7 +28,7 @@
     padding: 15px;
 }
 
-.nav ul li:first-child {
+.nav ul li:first-child {            /* Local variable */
     --color: rgb(211, 83, 32);  
     background-color: var(--color);
 }
